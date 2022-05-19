@@ -18,17 +18,17 @@
 body{
     background-color: var(--Light-gray);
     display: grid;
-    height: 100vh;
+    height: 1440px;
     place-items: center;
     font-family: 'Outfit', sans-serif;
 }
 
 .box{
-    height: 80vh;
-    width: 25vw;
+    height: 100vh;
+    width: 30vw;
     background-color: var(--White);
     border-radius: 1.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
 
     .img-box{
         height: 65%;
@@ -44,10 +44,12 @@ body{
 
     .content{
         text-align: center;
-        margin: 10px;
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
 
         h1{
-            font-size: 1.5rem;
+            font-size: 2rem;
             font-weight: 700;
             margin-bottom: 10px;
             color: var(--Dark-blue);
@@ -58,6 +60,35 @@ body{
             width: 90%;
             color: var(--Grayish-blue);
             font-weight: 400;
+            font-size: 1.3rem;
         }
     }
 }
+
+
+
+@media only screen and (max-width: 375px) {
+    body{
+        height: 100vh;
+        
+    }
+
+    .box{
+        height: 90%;
+        width: 85%;
+
+        .img-box{
+            height: 70%;
+            width: 100%;
+        }
+
+        .content{
+            h1{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+  }
